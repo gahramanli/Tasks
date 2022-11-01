@@ -1,0 +1,100 @@
+1.Task1
+1)C#
+using System;  
+  public class Task1  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int i,fact=1,number;      
+       Console.Write("Enter Number: ");      
+       number= int.Parse(Console.ReadLine());     
+       for(i=1;i<=number;i++){      
+        fact=fact*i;      
+       }      
+       Console.Write("Factorial of " +number+" is: "+fact);    
+     }  
+  }  
+2)JavaScript
+var number = prompt(”Enter a number”);
+var fact = 1;
+if(number == 0){
+	console.log('The factorial of ${number} is 1');
+}else if(number < 0){
+	console.log('The factorial is not available');
+}else{
+	for(var i=1;i<=number;i++){
+		fact = fact * i;
+	}
+	console.log('The factorial of ${number} is ${fact}');
+}
+
+2. Task 2
+1)C#
+using System;  
+  public class Task2  
+   {  
+     public static void Main(string[] args)  
+      {  
+          int n, i, m=0, flag=0;    
+          Console.Write("Enter the number : ");    
+          n = int.Parse(Console.ReadLine());  
+          m=n/2;    
+          for(i = 2; i <= m; i++)    
+          {    
+           if(n % i == 0)    
+            {    
+             Console.Write("Number is Composite.");    
+             flag=1;    
+             break;    
+            }    
+          }    
+          if (flag==0)    
+           Console.Write("Number is Prime.");       
+     }  
+   }  
+2) JavaScript
+            var n, i, flag = true;
+             
+            n = document.myform.n.value;
+            n = parseInt(n)
+            for (i = 2; i <= n - 1; i++)
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+                 
+            if (flag == true)
+                console.log(n + " is prime");
+            else
+                console.log(n + " is composite");
+3.
+1) C#
+using System;
+namespace bp203
+{
+	class task3
+	{
+		static void Main()
+		{
+			Console.Write(”Enter number : ”);
+			int num = int.Parse(Console.ReadLine());
+			int sum = 0;
+			while(num>0)
+			{
+				num = num/10;
+				sum++;
+			}
+			Console.WriteLine(”number of digits of a number is = {0}”,sum);
+			Console.ReadKey();
+}
+
+2)JavaScript
+var x=Number(document.getElementById(”a”).value);
+var temp, c=0;
+temp=x;
+while(temp!=0)
+	{
+		c=c+1;
+		temp=perseInt(temp/10);
+	}
+console.log(”number of digits in ”+x+” is ”+c)
