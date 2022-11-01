@@ -67,7 +67,7 @@ using System;
                 console.log(n + " is prime");
             else
                 console.log(n + " is composite");
-3.
+3. Task3
 1) C#
 using System;
 namespace bp203
